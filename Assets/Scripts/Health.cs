@@ -29,6 +29,8 @@ public class Health : MonoBehaviour
     private void TriggerDeathVFX()
     {
         if (!deathVFX) return;
+
         Instantiate(deathVFX, transform.position, Quaternion.identity);
+        Destroy(deathVFX, 1f);
     }
 }
