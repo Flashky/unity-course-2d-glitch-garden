@@ -20,8 +20,15 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        Instantiate(deathVFX, transform.position, Quaternion.identity);
+        TriggerDeathVFX();
+        
         // TODO SFX death
         Destroy(gameObject);
+    }
+
+    private void TriggerDeathVFX()
+    {
+        if (!deathVFX) return;
+        Instantiate(deathVFX, transform.position, Quaternion.identity);
     }
 }
