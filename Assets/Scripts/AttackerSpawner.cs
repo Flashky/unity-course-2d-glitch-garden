@@ -7,7 +7,7 @@ public class AttackerSpawner : MonoBehaviour
 {
 
     // Configuration parameters
-    [SerializeField] Attacker attackerPrefab;
+    [SerializeField] GameObject attackerPrefab;
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 5f;
 
