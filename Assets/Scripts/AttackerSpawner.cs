@@ -6,13 +6,6 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour
 {
 
-    // Que necesito para spawnear un enemigo:
-    // - Un modelo (prefab) que usar para hacer Instanciate
-    // - Algunos atributos para definir: cuantos enemigos quiero que spawneen, a que ratio o velocidad...
-
-    // Posibles ideas:
-    // - ScriptableObject para obtener los datos de la oleada.
-
     // Configuration parameters
     [SerializeField] Attacker attackerPrefab;
     [SerializeField] float minSpawnDelay = 1f;
