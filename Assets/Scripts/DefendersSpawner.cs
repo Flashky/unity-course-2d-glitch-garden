@@ -9,8 +9,6 @@ public class DefendersSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked on Game area!");
-
         Vector2 worldPos = GetSquareClicked();
         SpawnDefender(worldPos);
     }
@@ -28,11 +26,9 @@ public class DefendersSpawner : MonoBehaviour
         var snapPosX = Mathf.RoundToInt(rawWorldPos.x);
         var snapPosY = Mathf.RoundToInt(rawWorldPos.y);
 
-        Debug.Log(snapPosX + "," + snapPosY);
-
-
         return new Vector2(snapPosX, snapPosY);
     }
+
     private void SpawnDefender(Vector2 worldPos)
     {
         GameObject newDefender = Instantiate(defender, worldPos, Quaternion.identity);
