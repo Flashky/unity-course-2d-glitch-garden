@@ -31,6 +31,6 @@ public class Health : MonoBehaviour
         if (!deathVFX) return;
 
         Instantiate(deathVFX, transform.position, Quaternion.identity);
-        Destroy(deathVFX, 1f);
+        Destroy(deathVFX, 2f);
     }
 }
