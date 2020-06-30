@@ -429,6 +429,8 @@ MonoBehaviour:
   unselectedColor:
     serializedVersion: 2
     rgba: 4281413937
+  defenderPrefab: {fileID: 643941325235707627, guid: 8134794282c9d4e4ea9d3ef312eefbce,
+    type: 3}
 --- !u!61 &901790774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -536,7 +538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cce9de4e8191942bf300d674c724d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defender: {fileID: 0}
 --- !u!61 &1060024017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -887,6 +888,8 @@ MonoBehaviour:
   unselectedColor:
     serializedVersion: 2
     rgba: 4281413937
+  defenderPrefab: {fileID: 6237195034513770225, guid: dc1827369ef3beb44908b1853f4c6270,
+    type: 3}
 --- !u!1 &1703706879
 GameObject:
   m_ObjectHideFlags: 0
